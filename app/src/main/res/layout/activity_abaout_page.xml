@@ -9,15 +9,22 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/about_page"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/About"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
     <ImageView
         android:id="@+id/photo"
         android:layout_width="265dp"
         android:layout_height="213dp"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:src="@drawable/photoProfile">
-
-    </ImageView>
+        android:src="@drawable/photoProfile"/>
 
     <TextView
         android:id="@+id/Profile"
@@ -45,13 +52,14 @@
         android:textSize="24sp"
         android:textStyle="bold"/>
 
-
     <TextView
         android:id="@+id/about_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/spek"
+        android:textStyle="bold"
         android:textSize="16sp"/>
 
     <TextView
@@ -60,6 +68,13 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:text="@string/app_version_1_0"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/about_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/kotlin"
         android:textSize="14sp"/>
 
 

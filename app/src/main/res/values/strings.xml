@@ -4,4 +4,6 @@
     <string name="spek">Spesifikasi Aplikasi : </string>
     <string name="nameProfile">Andrian Naufal</string>
     <string name="app_version_1_0">App Version: 1.0</string>
+    <string name="kotlin">Language Program : Kotlin</string>
+    <string name="About">About</string>
 </resources>
