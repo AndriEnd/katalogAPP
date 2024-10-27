@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KatalogApp</string>
+    <string name="aboutApp">Aplikasi katalog Online</string>
+    <string name="spek">Spesifikasi Aplikasi : </string>
+    <string name="nameProfile">Andrian Naufal</string>
+    <string name="app_version_1_0">App Version: 1.0</string>
+</resources>
