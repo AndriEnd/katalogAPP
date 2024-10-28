@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".abaout_page"
+    tools:context=".about_page"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -24,7 +24,7 @@
         android:layout_height="213dp"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:src="@drawable/photoProfile"/>
+        android:src="@drawable/photo_profile"/>
 
     <TextView
         android:id="@+id/Profile"
