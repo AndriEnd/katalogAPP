@@ -6,4 +6,8 @@
     <string name="app_version_1_0">App Version: 1.0</string>
     <string name="kotlin">Language Program : Kotlin</string>
     <string name="About">About</string>
+    <string name="email">ndrian1710@gmail.com</string>
+    <string name="nama_item">Nama Barang</string>
+    <string name="deskripsi_barang">Deskripsi</string>
+    <string name="price_item">Price</string>
 </resources>
