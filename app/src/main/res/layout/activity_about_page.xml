@@ -89,13 +89,14 @@
             android:text="@string/app_version_1_0"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/about_language"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="@string/kotlin"
-            android:textSize="14sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/about_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/kotlin"
+        android:textSize="14sp" />
 
 </LinearLayout>

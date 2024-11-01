@@ -1,12 +1,12 @@
 package com.example.katalogapp
 
-import kotlinx.parcelize.Parcelize
 import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Barang(
-    var nama: String,
+    var namaBarang: String,
+    var price: String,
     var description: String,
-    var photo: String,
-    var harga:Int
+    var photo: Int,
 ) : Parcelable
 

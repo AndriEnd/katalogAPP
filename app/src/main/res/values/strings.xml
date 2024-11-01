@@ -10,4 +10,58 @@
     <string name="nama_item">Nama Barang</string>
     <string name="deskripsi_barang">Deskripsi</string>
     <string name="price_item">Price</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+
+
+    <string-array name="name_item">
+        <item>Bag</item>
+        <item>Blazer</item>
+        <item>Glasses</item>
+        <item>hats</item>
+        <item>jacket</item>
+        <item>Leather Shoes</item>
+        <item>Pants</item>
+        <item>Ring</item>
+        <item>T Shirt</item>
+        <item>Watch</item>
+    </string-array>
+    <string-array name="price_item">
+        <item>1$</item>
+        <item>3$</item>
+        <item>2$</item>
+        <item>7$</item>
+        <item>12$</item>
+        <item>8$</item>
+        <item>10$</item>
+        <item>120$</item>
+        <item>4$</item>
+        <item>50$</item>
+    </string-array>
+    <string-array name="data_deskripsi">
+        <item>Tas Trendy Serbaguna hadir dengan desain modern dan fungsional untuk menemani aktivitas Anda sepanjang hari. Terbuat dari bahan berkualitas tinggi yang tahan lama dan ringan, tas ini dilengkapi dengan kompartemen utama yang luas dan beberapa kantong tambahan untuk menyimpan barang-barang esensial Anda.</item>
+        <item>Blazer Modern Classic ini dirancang untuk melengkapi penampilan profesional dan kasual Anda dengan sentuhan gaya yang elegan. Dibuat dari bahan berkualitas premium yang nyaman dipakai sepanjang hari, blazer ini menawarkan potongan yang pas di tubuh, memberikan kesan ramping dan modern.</item>
+        <item>Kacamata Stylish Vision menawarkan perpaduan sempurna antara gaya dan kenyamanan. Dengan bingkai ringan yang dirancang ergonomis, kacamata ini memberikan perlindungan maksimal dan tampilan elegan. </item>
+        <item>Topi Casual FlexFit hadir dengan desain klasik yang tak lekang oleh waktu, cocok untuk melengkapi berbagai gaya busana Anda. Dibuat dari bahan berkualitas tinggi yang ringan dan nyaman, topi ini sangat cocok untuk aktivitas luar ruangan atau sekadar menambahkan gaya pada penampilan kasual Anda. </item>
+        <item>Jaket Windbreaker Active ini dirancang khusus untuk Anda yang aktif dan dinamis. Terbuat dari bahan ringan dan tahan angin, jaket ini memberikan perlindungan optimal saat beraktivitas di luar ruangan. Dengan desain sporty dan detail reflektif, jaket ini juga memastikan Anda tetap terlihat saat malam hari. </item>
+        <item>Sepatu Kulit Elegan Premium ini merupakan pilihan sempurna bagi Anda yang mengutamakan kualitas dan gaya. Terbuat dari kulit asli berkualitas tinggi, sepatu ini memiliki desain klasik dengan sentuhan modern yang mudah dipadukan dengan pakaian formal maupun kasual. Dengan sol yang nyaman dan jahitan yang rapi, sepatu ini tidak hanya tampil elegan tetapi juga tahan lama dan cocok untuk penggunaan sehari-hari.</item>
+        <item>Celana Chino Slim Fit ini adalah pilihan tepat bagi Anda yang mencari kenyamanan sekaligus gaya. Terbuat dari bahan katun yang lembut dan breathable, celana ini sangat cocok untuk tampilan kasual hingga semi-formal. Potongan slim fit yang modern menambah kesan ramping dan stylish, cocok dipadukan dengan kemeja, kaos, atau blazer favorit Anda. Dengan warna-warna netral, celana ini mudah di-mix and match untuk berbagai kesempatan</item>
+        <item>Cincin Classic Elegance adalah pilihan sempurna bagi Anda yang menginginkan aksen elegan dalam setiap kesempatan. Dirancang dengan detail yang menawan dan dibuat dari bahan berkualitas tinggi, cincin ini memberikan kesan mewah dan timeless. Cocok dipakai sebagai cincin pernikahan, tunangan, atau sebagai perhiasan sehari-hari, cincin ini menjadi simbol kesempurnaan yang sederhana namun berkelas.</item>
+        <item>Kaos Basic Essential adalah pilihan tepat untuk gaya kasual sehari-hari dengan sentuhan nyaman dan stylish. Terbuat dari bahan katun lembut dan breathable, kaos ini dirancang untuk kenyamanan sepanjang hari, baik untuk aktivitas santai maupun sebagai lapisan dalam. Dengan potongan regular fit yang sederhana, kaos ini mudah dipadukan dengan celana jeans, celana pendek, atau outer favorit Anda.</item>
+        <item>Jam Tangan Chrono Elite adalah kombinasi sempurna antara fungsi dan gaya, dirancang untuk Anda yang mengutamakan penampilan profesional dan elegan. Dengan mesin berkualitas tinggi, fitur chronograph, dan desain yang modern, jam ini menjadi aksesori yang tidak hanya fungsional tetapi juga berkelas.</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/bag</item>
+        <item>@drawable/blazer</item>
+        <item>@drawable/glasses</item>
+        <item>@drawable/hats</item>
+        <item>@drawable/jackets</item>
+        <item>@drawable/leathershoe</item>
+        <item>@drawable/pants</item>
+        <item>@drawable/ring</item>
+        <item>@drawable/shirt</item>
+        <item>@drawable/shoes</item>
+        <item>@drawable/watche</item>
+    </integer-array>
+
 </resources>

@@ -30,17 +30,18 @@
             card_view:layout_constraintHorizontal_bias="0.0"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.0"
+            card_view:layout_constraintVertical_bias="1.0"
             tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/tv_price"
             android:layout_width="148dp"
             android:layout_height="19dp"
+            android:layout_marginStart="2dp"
+
+
             android:layout_marginEnd="283dp"
             android:layout_marginBottom="1dp"
-
-
             android:text="@string/price_item"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -54,25 +55,27 @@
             android:id="@+id/tv_name_item"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp"
             android:text="@string/nama_item"
             android:textSize="15sp"
             android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_price"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/img_item"
             card_view:layout_constraintTop_toTopOf="@+id/img_item"
-            tools:text="@string/nama_item"
-            />
+            tools:text="@string/nama_item" />
 
         <TextView
             android:id="@+id/tv_item_description"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginStart="2dp"
             android:ellipsize="end"
             android:maxLines="5"
-            card_view:layout_constraintBottom_toBottomOf="@+id/img_item"
-            card_view:layout_constraintEnd_toEndOf="@+id/tv_name_item"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/tv_name_item"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_price"
             card_view:layout_constraintVertical_bias="0.0"
