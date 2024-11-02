@@ -9,7 +9,7 @@
     <string name="email">ndrian1710@gmail.com</string>
     <string name="nama_item">Nama Barang</string>
     <string name="deskripsi_barang">Deskripsi</string>
-    <string name="price_item">Price</string>
+    <string name="price_item">Price Item</string>
     <string name="grid">Grid</string>
     <string name="list">List</string>
 
@@ -18,8 +18,8 @@
         <item>Bag</item>
         <item>Blazer</item>
         <item>Glasses</item>
-        <item>hats</item>
-        <item>jacket</item>
+        <item>Hats</item>
+        <item>Jacket</item>
         <item>Leather Shoes</item>
         <item>Pants</item>
         <item>Ring</item>

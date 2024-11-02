@@ -2,6 +2,22 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="MainActivity">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\MSI 320 PRO\.android\avd\Pixel_XL_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-11-02T18:03:47.212854700Z" />
+        </State>
+      </entry>
       <entry key="about_page">
         <State />
       </entry>
@@ -13,12 +29,12 @@
               <deviceKey>
                 <Key>
                   <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\user\.android\avd\Samsung_S23_API_34.avd" />
+                  <value value="C:\Users\MSI 320 PRO\.android\avd\Pixel_XL_API_34.avd" />
                 </Key>
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-10-29T02:56:54.580742200Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-11-02T17:01:40.160068200Z" />
         </State>
       </entry>
     </value>

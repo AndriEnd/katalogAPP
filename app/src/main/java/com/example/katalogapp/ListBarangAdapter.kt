@@ -40,7 +40,7 @@ class ListBarangAdapter(private val listBarang: ArrayList<Barang>) : RecyclerVie
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_item)
         val tvBarang: TextView = itemView.findViewById(R.id.tv_name_item)
-        val tvPrice: TextView = itemView.findViewById(R.id.tv_name_item)
+        val tvPrice: TextView = itemView.findViewById(R.id.tv_price)
         val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
 
     }

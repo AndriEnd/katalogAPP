@@ -1,5 +1,6 @@
 package com.example.katalogapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,23 +22,32 @@ class MainActivity : AppCompatActivity() {
             list.addAll(getListBarang())
             showRecyclerList()
     }
-        override fun onCreateOptionsMenu (menu: Menu?) :Boolean{
-            menuInflater.inflate(R.menu.menu_main,menu)
-            return super.onCreateOptionsMenu(menu)
-        }
-        override fun onOptionsItemSelected (item: MenuItem):Boolean{
-            when(item.itemId){
-                R.id.action_list->{
-                    rvBarang.layoutManager = LinearLayoutManager(this)
-                }
-                R.id.action_grid->{
-                    rvBarang.layoutManager= GridLayoutManager(this,2)
-                }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_list -> {
+                rvBarang.layoutManager = LinearLayoutManager(this)
+                true
             }
-            return super.onOptionsItemSelected(item)
+            R.id.action_grid -> {
+                rvBarang.layoutManager = GridLayoutManager(this, 2)
+                true
+            }
+            R.id.about_page -> {
+                val intent = Intent(this, About_activity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
+    }
         private fun showSelectedbarang(barang:Barang){
-            Toast.makeText(this,"Kamu Memilih"+barang.namaBarang, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Detail"+barang.namaBarang, Toast.LENGTH_SHORT).show()
         }
         private fun getListBarang(): ArrayList<Barang> {
             val dataName = resources.getStringArray(R.array.name_item)
