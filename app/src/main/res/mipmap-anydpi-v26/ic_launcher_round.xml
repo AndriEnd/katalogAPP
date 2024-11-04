@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/catalogue" />
+    <background android:drawable="@drawable/circle_image_background" />
     <foreground android:drawable="@drawable/circle_image_background"/>
     <monochrome android:drawable="@drawable/circle_image_background" />
 </adaptive-icon>
