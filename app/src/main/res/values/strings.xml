@@ -12,6 +12,7 @@
     <string name="price_item">Price Item</string>
     <string name="grid">Grid</string>
     <string name="list">List</string>
+    <string name="harga">Price :</string>
 
 
     <string-array name="name_item">

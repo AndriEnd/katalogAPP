@@ -74,7 +74,7 @@
             android:layout_height="22dp"
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
-            android:text="Harga : "
+            android:text="@string/harga"
             android:textSize="16dp"
             android:textStyle="bold"
             card_view:layout_constraintBottom_toTopOf="@+id/tv_item_description"
