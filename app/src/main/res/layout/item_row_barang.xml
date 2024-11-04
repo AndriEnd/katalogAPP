@@ -35,20 +35,6 @@
             card_view:layout_constraintVertical_bias="0.0"
             tools:src="@tools:sample/avatars" />
 
-        <TextView
-            android:id="@+id/tv_price"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
-            android:text="@string/price_item"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            card_view:layout_constraintBottom_toTopOf="@+id/tv_item_description"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.055"
-            card_view:layout_constraintStart_toEndOf="@+id/Price"
-            card_view:layout_constraintTop_toBottomOf="@+id/tv_name_item" />
 
         <TextView
             android:id="@+id/tv_item_description"
@@ -81,10 +67,12 @@
             card_view:layout_constraintTop_toTopOf="parent"
             tools:text="@string/nama_item" />
 
+
         <TextView
             android:id="@+id/Price"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="58dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:text="Price : "
             android:textSize="16dp"
@@ -95,6 +83,24 @@
             card_view:layout_constraintStart_toStartOf="@+id/tv_name_item"
             card_view:layout_constraintTop_toTopOf="@+id/tv_price"
             card_view:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/price_item"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_item_description"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toEndOf="@+id/Price"
+            card_view:layout_constraintStart_toStartOf="@+id/Price"
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_name_item" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
