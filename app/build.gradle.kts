@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.core:core-splashscreen:1.0.0")
+    implementation(libs.androidx.core.splashscreen.v101)
     implementation(libs.circleimageview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -1,5 +1,6 @@
 package com.example.katalogapp
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -15,10 +16,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rvBarang: RecyclerView
     private val list =ArrayList<Barang>()
         override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+            installSplashScreen()
 
-            val splashActivity= installSplashScreen()
+            super.onCreate(savedInstanceState)
 
             setContentView(R.layout.activity_main)
 
@@ -26,10 +26,7 @@ class MainActivity : AppCompatActivity() {
             rvBarang.setHasFixedSize(true)
             list.addAll(getListBarang())
             showRecyclerList()
-            splashActivity.setKeepOnScreenCondition {
-                // Tambahkan logika di sini jika ingin splash screen lebih lama, misalnya loading data
-                false // Kembalikan `false` untuk langsung lanjut ke MainActivity
-            }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

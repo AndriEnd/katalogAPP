@@ -1,19 +1,22 @@
+
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import androidx.appcompat.app.AppCompatActivity
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
+import androidx.activity.ComponentActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.katalogapp.MainActivity
 import com.example.katalogapp.R
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_layout)
+
+        installSplashScreen()
+
 
         // Ambil referensi ke logo
         val logo = findViewById<ImageView>(R.id.logo_splash)
@@ -40,9 +43,9 @@ class SplashActivity : AppCompatActivity() {
         scaleYAnimator.start()
 
         // Pindah ke MainActivity setelah animasi selesai
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
-            finish()
-        }, 1500) // 1.5 detik
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
+
