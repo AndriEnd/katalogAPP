@@ -1,4 +1,5 @@
 
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -38,7 +39,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("androidx.core:core-splashscreen:1.0.0")
     implementation(libs.circleimageview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
