@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.katalogapp.MainActivity
 import com.example.katalogapp.R
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+
 
 class SplashActivity : ComponentActivity() {
 
