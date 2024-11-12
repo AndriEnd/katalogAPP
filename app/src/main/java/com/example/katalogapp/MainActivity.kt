@@ -2,38 +2,55 @@ package com.example.katalogapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.ViewTreeObserver
 import android.widget.Toast
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var content: View
+    private val viewModel: MainViewModel by viewModels()
+
     private lateinit var rvBarang: RecyclerView
     private val list = ArrayList<Barang>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Pasang splash screen sistem
-        installSplashScreen()
-
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        setContentView(R.layout.activity_main)
+        content = findViewById(R.id.rv_item)
+        content.viewTreeObserver.addOnPreDrawListener(
+            object : ViewTreeObserver.OnPreDrawListener {
+                override fun onPreDraw(): Boolean {
+                    return if (viewModel.isDataReady.value == true) {
+                        content.viewTreeObserver.removeOnPreDrawListener(this)
+                        true
+                    } else {
+                        false
+                    }
+                }
+            }
+        )
+
+        // Inisialisasi RecyclerView
         rvBarang = findViewById(R.id.rv_item)
         rvBarang.setHasFixedSize(true)
         list.addAll(getListBarang())
         showRecyclerList()
-
-        // Menggunakan Handler untuk menunda aksi jika diperlukan
-        Handler(Looper.getMainLooper()).postDelayed({
-            // Tambahkan logika setelah penundaan jika diperlukan
-        }, 3000)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -89,5 +106,25 @@ class MainActivity : AppCompatActivity() {
                 showSelectedBarang(data)
             }
         })
+    }
+}
+
+class MainViewModel : ViewModel() {
+
+    // LiveData untuk melacak apakah data sudah siap
+    private val _isDataReady = MutableLiveData(false)
+    val isDataReady: LiveData<Boolean> get() = _isDataReady
+
+    init {
+        // Simulasi pemuatan data
+        loadData()
+    }
+
+    private fun loadData() {
+        // Gunakan coroutine untuk melakukan pemuatan data secara asinkron
+        viewModelScope.launch {
+            delay(2000) // Simulasi delay pemuatan data
+            _isDataReady.value = true // Data sudah siap
+        }
     }
 }
