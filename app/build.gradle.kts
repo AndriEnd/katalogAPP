@@ -40,7 +40,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.splashscreen.v101)
-    implementation (libs.androidx.activity.ktx)// Versi bisa disesuaikan dengan versi terbaru
+    implementation (libs.androidx.activity.ktx.v160)// Versi bisa disesuaikan dengan versi terbaru
     implementation(libs.circleimageview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

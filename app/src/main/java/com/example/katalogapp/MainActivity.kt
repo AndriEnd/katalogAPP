@@ -22,17 +22,18 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
 
     private lateinit var content: View
-    private val viewModel: MainViewModel by viewModels()
+    private val viewModel: MainViewModel by viewModels() // Pastikan sudah benar
 
     private lateinit var rvBarang: RecyclerView
     private val list = ArrayList<Barang>()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
-        content = findViewById(R.id.rv_item)
+
+        content = findViewById(R.id.rv_item) // Pastikan ID ini benar di layout Anda
+
+        // Menambahkan OnPreDrawListener untuk menunda hingga data siap
         content.viewTreeObserver.addOnPreDrawListener(
             object : ViewTreeObserver.OnPreDrawListener {
                 override fun onPreDraw(): Boolean {

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:theme="@style/Base.Theme.KatalogApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -10,8 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/katalog"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KatalogApp"
         tools:targetApi="31">
+
         <activity
             android:name=".About_activity"
             android:exported="true"
