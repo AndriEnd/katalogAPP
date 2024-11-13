@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="384dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_name_item"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/nama_item"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <TextView
+        android:id="@+id/deskripsi_barang"
+        android:layout_width="385dp"
+        android:layout_height="121dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/deskripsi_barang"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/price_item"
+        app:layout_constraintBottom_toTopOf="@+id/detail_barang"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_item"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_item"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detail_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_product"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="124dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="53dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/barang_terjual"
+        android:layout_width="82dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/terjual"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar2"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/spek_barang"
+        android:layout_width="383dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/spek_barang"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsi_barang"
+        app:layout_constraintTop_toBottomOf="@+id/detail_barang"
+        app:layout_constraintVertical_bias="0.506"
+        tools:layout_editor_absoluteX="16dp"/>
+
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:backgroundTintMode="add"
+        android:text="@string/buy"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,7 +46,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
-
         // Inisialisasi RecyclerView
         rvBarang = findViewById(R.id.rv_item)
         rvBarang.setHasFixedSize(true)

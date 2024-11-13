@@ -14,8 +14,6 @@ class SplashActivity : AppCompatActivity() {
 
         // Tampilkan teks atau elemen lainnya
         val textView:TextView = findViewById(R.id.title_splash)
-
-
         // Pindah ke MainActivity setelah beberapa detik
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))

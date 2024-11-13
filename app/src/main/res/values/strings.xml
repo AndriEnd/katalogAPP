@@ -14,6 +14,10 @@
     <string name="list">List</string>
     <string name="harga">Price :</string>
     <string name="des_app">Katalog App adalah aplikasi mobile yang dirancang untuk memudahkan pengguna dalam menjelajahi dan menemukan produk dengan cepat dan efisien. Aplikasi ini memiliki fitur lengkap untuk menampilkan berbagai kategori produk dengan deskripsi, gambar, harga, dan ketersediaan stok. Aplikasi ini cocok digunakan oleh bisnis retail, toko online, atau individu yang ingin mempromosikan produk-produk mereka dalam satu tempat terpadu.</string>
+    <string name="spek_barang">Spek Barang</string>
+    <string name="detail_product">Detail Product</string>
+    <string name="terjual">Terjual</string>
+    <string name="buy">Beli</string>
 
 
     <string-array name="name_item">
