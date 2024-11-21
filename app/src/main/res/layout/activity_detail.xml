@@ -30,10 +30,6 @@
         app:layout_constraintTop_toBottomOf="@id/searchView"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <!-- Nama Barang -->
-
-    <!-- Harga Barang -->
-
     <TextView
         android:id="@+id/tv_name_item"
         android:layout_width="0dp"
@@ -71,11 +67,13 @@
         android:id="@+id/spek_barang"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="126dp"
         android:text="@string/spek_barang"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/deskripsi_barang"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/detail_barang" />
 
     <!-- Deskripsi Barang -->
@@ -84,9 +82,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginBottom="235dp"
         android:text="@string/deskripsi_barang"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_buy"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spek_barang" />
 
     <!-- Tombol Beli -->
@@ -94,24 +94,19 @@
         android:id="@+id/button_buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:text="@string/buy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="667dp" />
-
-
-
-
-
-
-
-
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_buy" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,6 +18,7 @@
     <string name="detail_product">Detail Product</string>
     <string name="terjual">Terjual</string>
     <string name="buy">Beli</string>
+    <string name="save">Save</string>
 
 
     <string-array name="name_item">
