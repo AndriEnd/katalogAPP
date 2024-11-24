@@ -1,11 +1,11 @@
 package com.example.katalogapp
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
 
 class ListBarangAdapter(private val listBarang: ArrayList<Barang>) : RecyclerView.Adapter<ListBarangAdapter.ListViewHolder>() {
@@ -30,11 +30,14 @@ class ListBarangAdapter(private val listBarang: ArrayList<Barang>) : RecyclerVie
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
+
     ): ListBarangAdapter.ListViewHolder {
         val view: View =
             LayoutInflater.from(parent.context).inflate(R.layout.item_row_barang, parent, false)
         return ListViewHolder(view)
     }
+
+
 
     override fun getItemCount(): Int = listBarang.size
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

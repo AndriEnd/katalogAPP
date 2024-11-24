@@ -6,7 +6,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewTreeObserver
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
@@ -77,10 +76,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showSelectedBarang(barang: Barang) {
-        Toast.makeText(this, "Detail: ${barang.namaBarang}", Toast.LENGTH_SHORT).show()
-    }
-
     private fun getListBarang(): ArrayList<Barang> {
         val dataName = resources.getStringArray(R.array.name_item)
         val price = resources.getStringArray(R.array.price_item)
@@ -94,6 +89,15 @@ class MainActivity : AppCompatActivity() {
         }
         dataPhoto.recycle()
         return listBarang
+    }
+    private fun showSelectedBarang(barang: Barang) {
+        val intent = Intent(this, DetailActivity::class.java).apply {
+            putExtra(DetailActivity.EXTRA_NAME, barang.namaBarang)
+            putExtra(DetailActivity.EXTRA_PRICE, barang.price)
+            putExtra(DetailActivity.EXTRA_DESCRIPTION, barang.description)
+            putExtra(DetailActivity.EXTRA_IMAGE, barang.photo)
+        }
+        startActivity(intent)
     }
 
     private fun showRecyclerList() {

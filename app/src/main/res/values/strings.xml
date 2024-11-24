@@ -19,6 +19,9 @@
     <string name="terjual">Terjual</string>
     <string name="buy">Beli</string>
     <string name="save">Save</string>
+    <string name="search_text">Search text...</string>
+    <string name="buy_button">Buy</string>
+    <string name="button_save">Save</string>
 
 
     <string-array name="name_item">
