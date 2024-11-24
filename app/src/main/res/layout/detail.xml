@@ -13,11 +13,6 @@
         android:orientation="vertical">
 
         <!-- Search View -->
-        <SearchView
-            android:id="@+id/search_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/search_text"/>
 
         <ImageView
             android:id="@+id/iv_foto_barang"
@@ -45,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/harga"
+                android:textColor="#43A047"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

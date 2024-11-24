@@ -34,7 +34,7 @@
         <item>Pants</item>
         <item>Ring</item>
         <item>T Shirt</item>
-        <item>Watch</item>
+        <item>Watche</item>
     </string-array>
     <string-array name="price_item">
         <item>1$</item>
@@ -70,7 +70,6 @@
         <item>@drawable/pants</item>
         <item>@drawable/ring</item>
         <item>@drawable/shirt</item>
-        <item>@drawable/shoes</item>
         <item>@drawable/watche</item>
     </integer-array>
 
