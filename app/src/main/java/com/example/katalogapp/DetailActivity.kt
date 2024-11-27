@@ -1,5 +1,4 @@
 package com.example.katalogapp
-
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView

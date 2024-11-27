@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,24 +14,38 @@
         android:orientation="vertical">
 
         <!-- Search View -->
-
         <ImageView
             android:id="@+id/iv_foto_barang"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="55dp">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/tv_name_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/nama_item"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <!-- Price Layout -->
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -41,41 +56,42 @@
                 android:layout_height="wrap_content"
                 android:text="@string/harga"
                 android:textColor="#43A047"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="65dp"
                 android:text="@string/price_item"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_item_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:lineSpacingExtra="4dp"
-                android:text="@string/deskripsi_barang"
-                android:textSize="15sp" />
 
         </RelativeLayout>
 
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/deskripsi_barang"
+            android:textSize="20sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="4dp"
-                android:text="@string/buy_button" />
+                android:text="@string/buy_button"
+                android:backgroundTint="#43A047"
+                />
 
             <Button
                 android:id="@+id/btn_save"
@@ -84,7 +100,9 @@
                 android:layout_marginEnd="24dp"
                 android:layout_toStartOf="@+id/button2"
                 android:text="@string/button_save"
-                android:textSize="12sp" />
+                android:backgroundTint="#FB8C00"
+                android:textSize="12sp"
+               />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

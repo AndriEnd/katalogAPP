@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.KatalogApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.KatalogApp" parent="Theme.Material3.DayNight">
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/katalog</item>
+        <item name="title">@string/app_name</item>
         <item name="android:windowSplashScreenAnimationDuration">3000</item>
     </style>
 </resources>
